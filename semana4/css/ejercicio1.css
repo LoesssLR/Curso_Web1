@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 90%;
+    padding: 20px;
+    background-color: rgb(167, 195, 255);
+    margin: auto;
+    display: flex;
+    gap: 1%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px gray;
+    flex-basis: 32%;
+    overflow: hidden; /* por defecto sale visible */
+    transition: all 0.3s ease; /* para el suavizado y que la animacion no se vea tan tosca*/
+}
+
+.card img{
+    width: 100%;
+}
+
+.card h3{
+    font-size: 1.5rem;
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(179, 179, 179);
+}
+
+.card p{
+    padding: 15px;
+    font-size: 1rem;
+    text-align: left;
+    color: gray;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}

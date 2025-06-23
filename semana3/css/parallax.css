@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fondo{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed; /* deja la imagen estatica a la hora del usar el scroll */
+}
+
+.seccion1{
+    background-image: url(../img/fondo1.jpg);
+}
+
+.texto{
+    width: 100%;
+    text-align: center;
+    padding: 60px 30px;
+}
+
+.texto p{
+    padding: 20px 0;
+}
+
+.seccion2 {
+    background-image: url(../img/fondo2.jpg);
+}
+
+.seccion3 {
+    background-image: url(../img/fondo3.jpg);
+}
+
+

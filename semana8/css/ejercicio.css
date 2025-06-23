@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    color: #333;
+}
+
+.contenedor{
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1{
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.agregar-texto{
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn{
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn:hover{
+    background-color: #444;
+}
+
+.articulos{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articulos li{
+    width: 50%;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 20px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 15px;
+    list-style: none;
+}
+
+.caja{
+    text-align: center;
+}
+
+.boton-limpiar{
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+}
+
+.boton-limpiar:hover{
+    background-color: #f1f1f1;
+}
+
+.claro{
+    background-color: white !important;
+    color: black;
+}
+
+.oscuro{
+    background-color: black !important;
+    color: white;
+}

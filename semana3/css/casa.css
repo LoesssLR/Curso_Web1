@@ -1,0 +1,59 @@
+.casa{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 150px auto;
+}
+
+.techo{
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 100px solid rgb(71, 18, 4);
+    height: 0;
+    width: 0;
+    position: absolute;
+    z-index: 20;
+}
+
+/* para usar el Z-INDEX, hay que usar la etiqueta de*/
+
+.base{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    background-color: rgba(255, 197, 160, 0.8);
+    top: 100px;
+    left: 50px;
+}
+
+.puerta{
+    position: absolute;
+    top: 175px;
+    left: 95px;
+    width: 40px;
+    height: 75px;
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+.ventana{
+    position: absolute;
+    top: 135px;
+    left: 165px;
+    width: 50px;
+    height: 40px;
+    background-color: rgba(0, 183, 255, 0.8);
+}
+
+.chimenea{
+    position: absolute;
+    top: 10px;
+    left: 200px; /* mover al lado derecho*/
+    width: 25px; /* ancho */
+    height: 75px; /* alto */
+    background-color: rgba(100, 100, 100);
+    z-index: 10;
+}
+
+
+
+

@@ -1,0 +1,122 @@
+.contenedor{
+    border: 1px solid black;
+    height: 2000px;
+    position: relative;
+}
+
+.caja {
+    width: 100px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    line-height: 100px; /* espaciado entre lineas */
+    background-color: black;
+    position: absolute;
+}
+
+/* 
+
+--- Posicionamiento estatico / static
+
+static = valor por defecto
+comportamiento: el elemento se coloca en el flujo normal del documento
+
+*/
+
+.static{ /* no hace falta ponerlo porque viene por defecto */
+    background-color: brown;
+    position: static;
+}
+
+/* 
+
+--- Posicionamiento relativo / relative
+
+el elemento se coloca en el flujo normal del documento pero se puede mover, usando las propiedades: top, bottom, left, right (solo se usa 1 propiedad, si se usa una, no se usa la otra).
+
+el elemento conserva su espacio original en el flujo
+
+uso comun: ajustar la posicion de un elemento sin afectar el diseño
+
+*/
+
+.relative{
+    background-color: blue;
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+/*
+
+--- Posicionamiento absoluto / absolute
+
+el elemento sale del flujo normal y se posiciona en relacion con el ancestro posicionado mas cercano, en este caso el contenedor
+
+*/
+
+.absolute{
+    background-color: green;
+    position: absolute;
+    top: 150px;
+    right: 100px;
+}
+
+/*
+
+--- Posicionamiento fijo / fixed
+
+pierde el flujo, va a permanecer fijo aunque hagamos scroll, y es en referencia al viewport (la pantalla del navegador)
+
+*/
+
+.fixed{ /* funcionaria como para un boton de accesibilidad*/
+    background-color: rgb(255, 242, 0);
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+/*
+
+--- Posicionamiento sticky
+
+combina el relative con el fixed
+
+*/
+
+.sticky{
+    background-color: orange;
+    position: sticky;
+    top: 0; /* cuando pega con la patrte superior entonces queda quieto */
+}
+
+/*
+
+z-index
+
+se utiliza para posicionar elementos sobre otros y solo funciona con una propiedad distinta a static 
+
+cuanto mayor sea el valor de z-index, más adelante estará el elemento en la visualización.
+
+utilizar numeros grandes, de 10 en 10 o de 20 en 20
+
+*/
+
+.uno{
+    top: 20px;
+    left: 20px;
+    z-index: 30;
+}
+
+.dos{
+    top: 50px;
+    left: 50px;
+    z-index: 20;
+}
+
+.tres{
+    top: 80px;
+    left: 80px;
+    z-index: 40; 
+}

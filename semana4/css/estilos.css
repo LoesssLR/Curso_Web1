@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+    color: white;
+    font-size: 1rem;
+}
+
+.contenedor{
+    width: 80%;
+    height: 300px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    /* flex-direction: row; */ /* row viene por defecto */
+    justify-content: center; /* alinea los elementos en la línea en horizontal */
+    align-items: flex-start; /* por defecto sale en stretch*/
+    /* flex-wrap: wrap; */ /* viene con nowrap por defecto*/
+    gap: 2%;
+    flex-flow: row wrap; /* lo mismo que las etiquetas que estan arriba, pero resumida xD*/
+}
+
+.caja{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    flex-basis: 25%; /* para medir el ancho de los objetos, no es lo mismo que width */
+}
+
+.caja1{
+    background-color: rgb(255, 0, 225);
+    /* height: 200px; */
+    /* width: 400px; */
+    flex-grow: 2; /* define cuanto debe crecer un objeto, por defecto el valor es 0*/
+}
+
+.caja2{
+    background-color: rgb(255, 157, 0);
+    /* padding-top: 10px; */
+    /* width: 800px; */
+    flex-grow: 1;
+}
+
+.caja3{
+    background-color: rgb(0, 140, 255);
+    flex-shrink: 3; /* lo contrario al grow, cuando debe disminuir o encogerse un objeto, valor por defecto es 1*/
+}
+
+.caja4{
+    background-color: rgb(0, 255, 38);
+    flex: 1 1 10%; /* el primero es grow, el segundo es shrink, y el ultimo es basis */
+    align-self: center;
+}

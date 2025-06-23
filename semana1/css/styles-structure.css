@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color:black;
+    height: 50px; /* Alto */
+    text-align: center;
+}
+
+h1{
+    color: white;
+}
+
+nav{
+    height: 60px;
+    text-align: right;
+    padding: 20px;
+    background-color: red;
+}
+
+nav a{
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.imagen-grande{
+    height: 340px;
+    background-image: url(../img/hero1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    /*background-color: blueviolet;*/
+    max-width: 1400px;
+    margin: 50px auto;
+}
+
+.principal{
+    display: inline-block;
+    text-align: left;
+    width: 49%;
+    vertical-align: top;
+}
+
+#principal2{
+    margin-top: 30px;
+}
+
+.tarjeta{
+    display: inline-block;
+    width: 33%;
+    padding: 5px;
+    text-align: center;
+}
+
+.tarjeta img{
+    width: 100%;
+    height: auto;
+}
+
+.imagen-grande2{
+    background-image: url(../img/imggrande.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 340px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 0, 0);
+}
+
+body{
+    background-color: white;
+    font-family: "Roboto Condensed", serif;
+}
+
+/*RESPONSIVE DESIGN - MEDIA QUERIES*/
+
+/*Tablets*/
+@media (max-width: 768px){
+    /*
+    body{
+        background-color: aqua;
+    }
+    */
+    nav{
+        text-align: center;
+    }
+    .imagen-grande, .imagen-grande2{
+        height: 200px;
+    }
+    main{
+        text-align: center;
+    }
+    .tarjeta p{
+        text-align: left;
+    }
+}
+
+/*Mobiles*/ 
+@media (max-width: 576px){
+    /*
+    body{
+        background-color: brown;
+    }
+    */
+    h1{
+        font-size: 20px;
+        line-height: 50px;
+    }
+    main{
+        width: 100%;
+    }
+    .principal{
+        display: block;
+        width: 100%;
+        padding: 5px;
+    }
+    h2, h3{
+        text-align: center;
+    }
+    .tarjeta{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+}
+

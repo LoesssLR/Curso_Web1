@@ -1,0 +1,66 @@
+/*
+Unidades absolutas = Ya tiene su valor definido, nunca va a cambiar = px, cm, pt, mm, etc...
+Unidades relativas = Lo contrario a la anterior, va a depender de elementos padres = rem, em, %, vh, vw
+*/
+
+/* Empezar con 16px en el HTML y después se va ajustando*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* la raiz del sitio*/
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: rgb(107, 67, 145);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
+}
+
+.padre{
+    background-color: bisque;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.hijo{
+    font-size: 15px;
+}
+
+p{
+    /* font-size: 30px; */
+
+    /* rem */
+    font-size: 4rem; /* relativo a la raiz que temga el documento */  /* 4 × 10px = 40px */
+
+    /* em */
+    font-size: 2em; /* relativo al tamaño de fuente del padre o superior que tenga un fontsize */  /* 2 × 15px = 30px */
+
+    /* % */
+    font-size: 80%; /* relativo al tamaño de fuente del padre */ /* Si el padre tiene font-size: 20px; entonces 80% es 16px (20px × 0.8). */
+
+    /* vw */
+    font-size: 5vw; /* relativo al ancho de la ventana del navegador */  /* 5% del ancho de la ventana */  /* 1vw = 1% del ancho del viewport */
+
+    /* vh */
+    font-size: 2vh; /* relativo al alto de la ventana del navegador */ /* 2% del alto de la ventana */  /* 1vh = 1% del alto del viewport. */
+
+    /* px */
+    font-size: 20px; /* absoluto */
+
+    /*
+    
+    px para tamaños fijos.
+    rem para mantener tamaños escalables basados en el html.
+    em si necesitas que el tamaño dependa del padre.
+    % para proporciones dentro del contenedor.
+    vw y vh para tamaños dinámicos según la ventana del navegador.
+    
+    */
+
+}
