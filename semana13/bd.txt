@@ -1,0 +1,24 @@
+CREATE DATABASE sistema_registro;
+USE sistema_registro;
+
+-- Tabla de usuarios para el login
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Tabla de personas
+CREATE TABLE personas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    cedula VARCHAR(20) NOT NULL UNIQUE,
+    nombre VARCHAR(100) NOT NULL,
+    edad INT NOT NULL,
+    telefono VARCHAR(20),
+    correo VARCHAR(100),
+    genero ENUM('Masculino', 'Femenino', 'Otro') NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
